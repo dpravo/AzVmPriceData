@@ -124,8 +124,8 @@ $dictLocation
 # loop through each location
 foreach ($loc in $dictLocation.keys){
 
-    Write-output "* Analysing $meterLocation`.."
     $meterLocation = $loc
+    Write-output "* Analysing $meterLocation`.."    
     $skuLocation = $dictLocation[$meterLocation]
 
     write-output "* Filtering pricesheet meters where location is $meterLocation (sku location $skuLocation).."
